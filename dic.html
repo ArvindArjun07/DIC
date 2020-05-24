@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<title> HOME </title>
+   <style>
+
+        body{
+            
+            border: solid;
+             font-size: 150%;
+            background-color: powderblue;
+       }
+        h1{
+            text-align: center;
+        }
+         h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        input{
+            text-align: center;
+            border: 1px solid black;
+        }
+       textarea{
+           border: 1px solid black;
+       }
+.nav{
+            background-color: black;
+            overflow: hidden;
+             list-style-type: none;
+        }
+    a{
+            border: none;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            float: right;
+            color: white;
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: #333;
+        }
+        a.active{
+            background-color: white;
+            color: black;
+            border-top: 1px solid black;
+        }
+    </style>
+    <nav>
+        <ul class="nav">
+            <li><a href="login.php">ADMIN LOGIN</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.php">ABOUT US</a></li>
+            <li><a href="dic.html" class="active">HOME</a></li></ul>
+    </nav>
+ <h1>Government of Karnataka </h1>
+<h2>Department of Skill Development, Entrepreneurship and Livehood, Dovelopment if Industries & commerce, UNDP & <br> centre for Entrepreneureship Development of Karnataka (CEDOK), Dharward. </h2>
+<h1><u>REGISTRATION FORM - DISHA- READY/STEADY </u> </h1>
+</head>
+    <body>
+
+        <div class="container" >
+
+            <form method="post" action="demo.php" >
+              &nbsp; Name of the participant : <input type ="text" name ="uname" placeholder="ENTER NAME" required><br><br>
+              &nbsp; Address : <br>
+              &nbsp; <textarea rows="4" cols="50" name="address" value="address" required></textarea><br><br>
+              &nbsp; Mobile No : <input type="text" placeholder="phone" name ="phone1" required><br><br>
+              &nbsp; Alternate contact No : <input type="text" placeholder="phone" name="phone2"><br><br>
+              &nbsp; E-mail ID :   <input type="text" placeholder="Enter E-mail ID " name="email" required><br><br>
+              &nbsp; Aadhaar No :  <input type="text" placeholder="Aadhaar Number" name="aadhar" required><br><br>
+              &nbsp; Gender :
+              &nbsp; <input type="radio" name="gender" value="male"> MALE
+              &nbsp; <input type="radio" name="gender" value="female"> FEMALE
+              &nbsp; <input type="radio" name="gender" value="others"> OTHERS <br><br>
+              &nbsp; Rural/Urban : <input type="radio" name="region" value="rural"> RURAL
+              &nbsp; <input type="radio" name ="region" value="urban"> URBAN<br><br>
+              &nbsp; Dtae of Birth : <input type="date" name="dob" value="dob">
+              &nbsp; Age : <input type="number" name="age"><br><br>
+              &nbsp; Educational Qualification :
+              &nbsp; <input type="checkbox" name="education[0]" value="UP TO S.S.L.C" > UP TO S.S.L.C 
+              &nbsp; <input type="checkbox" name="education[1]" value="PUC / 12TH"> PUC / 12TH 
+              &nbsp; <input type="checkbox" name="education[2]" value=" IT / JOC"> IT / JOC <br><br>
+              &nbsp; Caste : <input type="radio" name="caste" value="SC"> SC
+              &nbsp; <input type="radio" name="caste" value="ST"> ST
+              &nbsp; <input type="radio" name="caste" value="MIN"> MIN
+              &nbsp; <input type="radio" name="caste" value="OBC"> OBC
+              &nbsp; <input type="radio" name="caste" value="GEN"> GEN<br><br>
+              &nbsp; Occupation / Experience, if any :<br>
+              &nbsp; <textarea rows="4" cols="70" name="experience" value="experience"></textarea><br><br>
+              &nbsp; You Are Interested In :
+              &nbsp; <input type="checkbox" name="interest[0]" value="job"> JOB
+              &nbsp; <input type="checkbox" name="interest[1]" value="skill"> SKILL<br><br>
+              &nbsp; <input type="checkbox" name="interest[2]" value="income"> Additional Income
+              &nbsp; <input type="checkbox" name="interest[3]" value="employment">Self-Employment<br><br>
+              &nbsp; <input type="checkbox" name="interest[4]" value="bussiness"> Managing Family Bussiness
+              &nbsp; <input type="checkbox" name="interest[5]" value="higher education"> Higher Education <br><br>
+              &nbsp; <input type="checkbox" name="interest[6]" value="work from home"> Work From Home
+              &nbsp; <input type="checkbox" name="interest[7]" value="research and development" > Reasearch & development<br><br>
+              &nbsp; <input type="checkbox" name="interest[8]" value="others">Others Please Specify :<input type="text"> <br> <br>
+              &nbsp;&nbsp;Parents / Spouse Annual Income :  <input type="number" placeholder="Rupees" name="rupees" value="rupees"><br><br>
+              &nbsp;&nbsp;Any Other Information Willing to furnish : <input type="text"  name="other_info" value=" "><br><br><br>
+                                 <!-- <h3> SIGNATURE OF THE PARTICIPANT </h3>--->
+              &nbsp;  <input type="submit" name="submit" value="submit" />
+            </form>
+        </div>
+    </body>
+</html>
