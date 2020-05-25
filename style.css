@@ -1,0 +1,33 @@
+ body {
+            
+            font-size: 20px;
+            font-style: arial;
+        } 
+.body{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        a{
+            border: none;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            float: right;
+            color: white;
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: #333;
+        }
+        a.active{
+            background-color: white;
+            color: black;
+            border-top: 1px solid black;
+        }
+        .nav{
+            background-color: black;
+            overflow: hidden;
+             list-style-type: none;
+        }
